@@ -87,7 +87,7 @@ function Simple_Create(base, name, trackername, studs)
     txtlblstud.FontSize = 'Size12'
     txtlblstud.Text = tostring(studs) .. " Studs"
     txtlblstud.TextStrokeTransparency = 0.5
-    txtlblstud.TextColor3 = Color3.new(255,255,255)
+    txtlblstud.TextColor3 = Color3.new(255, 0, 0)
 end
 
 -- Clear ESP
@@ -139,8 +139,8 @@ MainSection:AddButton("Full Bright", "For users who are scared of the dark :(", 
     Lighting.TimeOfDay = "14:00:00"
     Lighting.FogEnd = 10000;
     Lighting.Brightness = 2;
-    Lighting.Ambient = Color3.fromRGB(255,255,255)
-    Lighting.FogColor = Color3.fromRGB(255,255,255)
+    Lighting.Ambient = Color3.fromRGB(255, 0, 0)
+    Lighting.FogColor = Color3.fromRGB(255, 0, 0)
 end)
 
 MainSection:AddSlider("WalkSpeed", "Adjust WalkSpeed to be speed", 1450, 10000, 1450, true, function(val)
