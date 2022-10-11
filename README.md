@@ -27,7 +27,7 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamst
 local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/SimpleHighlightESP.lua"))()
 
 -- Main Window
-local Window = lib:CreateWindow("Fu Kang Hub V2 Gui")
+local Window = lib:CreateWindow("Fu Kang Hub Gui")
 
 -- Create Pages
 local CharPage = Window:NewTab("Character")
@@ -65,7 +65,7 @@ function Simple_Create(base, name, trackername, studs)
     frame.ZIndex = 10
     frame.BackgroundTransparency = 0.3
     frame.Size = UDim2.new(1,0,1,0)
-    frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    frame.BackgroundColor3 = Color3.fromRGB(0, 239, 255)
 
     local txtlbl = Instance.new('TextLabel', bb)
     txtlbl.ZIndex = 10
@@ -76,7 +76,7 @@ function Simple_Create(base, name, trackername, studs)
     txtlbl.FontSize = 'Size12'
     txtlbl.Text = name
     txtlbl.TextStrokeTransparency = 0.5
-    txtlbl.TextColor3 = Color3.fromRGB(255, 0, 0)
+    txtlbl.TextColor3 = Color3.fromRGB(0, 239, 255)
 
     local txtlblstud = Instance.new('TextLabel', bb)
     txtlblstud.ZIndex = 10
@@ -87,7 +87,7 @@ function Simple_Create(base, name, trackername, studs)
     txtlblstud.FontSize = 'Size12'
     txtlblstud.Text = tostring(studs) .. " Studs"
     txtlblstud.TextStrokeTransparency = 0.5
-    txtlblstud.TextColor3 = Color3.new(255, 0, 0)
+    txtlblstud.TextColor3 = Color3.new(0, 239, 255)
 end
 
 -- Clear ESP
@@ -139,8 +139,8 @@ MainSection:AddButton("Full Bright", "For users who are scared of the dark :(", 
     Lighting.TimeOfDay = "14:00:00"
     Lighting.FogEnd = 10000;
     Lighting.Brightness = 2;
-    Lighting.Ambient = Color3.fromRGB(255, 0, 0)
-    Lighting.FogColor = Color3.fromRGB(255, 0, 0)
+    Lighting.Ambient = Color3.fromRGB(0, 239, 255)
+    Lighting.FogColor = Color3.fromRGB(0, 239, 255)
 end)
 
 MainSection:AddSlider("WalkSpeed", "Adjust WalkSpeed to be speed", 1450, 10000, 1450, true, function(val)
